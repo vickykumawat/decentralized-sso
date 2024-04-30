@@ -1,0 +1,23 @@
+{%include 'db_user.html'%}
+<div class="container" style="margin:0 auto;padding-top:100px;">
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+    <div class="card">
+        <h5 class="card-header">View Keys</h5>
+        <div class="card-body">
+           
+           
+                {% for i in b  %}
+				{% if i.foreign_status == 'level1' %}
+				<h2>Mother Secret Key : <span style="color:green;">{{i.private_key}}</span> </h2><br>
+				<h2>Mother  Public Key : <span style="color:red;">{{i.public_key}}</span>  </h2><br>
+				{% else %}
+				<h2>Mother Secret Key : <span style="color:green;">{{i.private_key}}</span> </h2><br>
+				<h2>Mother  Public Key : <span style="color:red;">{{i.public_key}}</span>  </h2><br>
+				<h2>Foreign Secret Key : <span style="color:red;">{{i.foreign_private_key}}</span>  </h2><br>
+				<h2>Foreign Public Key : <span style="color:green;">{{i.foreign_public_key}} </span> </h2><br>
+				
+                {% endif %}
+                {% endfor %}
+</div>
+</div></div>
+</div>

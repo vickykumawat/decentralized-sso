@@ -1,0 +1,8 @@
+How to make a random number generator in python
+How can we generate random numbers in python using methods
+How to generate random numbers in python without using random
+How to generate a random 4 digit number in python
+Python random number without repeating
+Python random number between 0 and 1
+Python generate random number in range
+Generate 20 random numbers between 1 and 100 python
